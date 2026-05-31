@@ -68,7 +68,7 @@ const DEFAULT_CONFIG: &str = r##"# herdr configuration
 [theme]
 # Built-in themes: catppuccin, terminal, tokyo-night, dracula, nord,
 #                  gruvbox, one-dark, solarized, kanagawa, rose-pine,
-#                  vesper
+#                  everforest, vesper
 # name = "catppuccin"
 
 # Override individual color tokens on top of the base theme.

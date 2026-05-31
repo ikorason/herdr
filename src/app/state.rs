@@ -452,6 +452,50 @@ impl Palette {
         }
     }
 
+    /// Everforest Dark Medium — warm, low-contrast forest palette by Sainnhe.
+    pub fn everforest() -> Self {
+        Self {
+            accent: Color::Rgb(127, 187, 179),
+            panel_bg: Color::Rgb(35, 42, 46),
+            surface0: Color::Rgb(52, 63, 68),
+            surface1: Color::Rgb(61, 72, 77),
+            surface_dim: Color::Rgb(45, 53, 59),
+            overlay0: Color::Rgb(122, 132, 120),
+            overlay1: Color::Rgb(133, 146, 137),
+            text: Color::Rgb(211, 198, 170),
+            subtext0: Color::Rgb(157, 169, 160),
+            mauve: Color::Rgb(214, 153, 182),
+            green: Color::Rgb(167, 192, 128),
+            yellow: Color::Rgb(219, 188, 127),
+            red: Color::Rgb(230, 126, 128),
+            blue: Color::Rgb(127, 187, 179),
+            teal: Color::Rgb(131, 192, 146),
+            peach: Color::Rgb(230, 152, 117),
+        }
+    }
+
+    /// Everforest Light Medium — soft, warm-paper light variant by Sainnhe.
+    pub fn everforest_light() -> Self {
+        Self {
+            accent: Color::Rgb(58, 148, 197),
+            panel_bg: Color::Rgb(239, 235, 212),
+            surface0: Color::Rgb(244, 240, 217),
+            surface1: Color::Rgb(230, 226, 204),
+            surface_dim: Color::Rgb(253, 246, 227),
+            overlay0: Color::Rgb(166, 176, 160),
+            overlay1: Color::Rgb(147, 159, 145),
+            text: Color::Rgb(92, 106, 114),
+            subtext0: Color::Rgb(130, 145, 129),
+            mauve: Color::Rgb(223, 105, 186),
+            green: Color::Rgb(141, 161, 1),
+            yellow: Color::Rgb(223, 160, 0),
+            red: Color::Rgb(248, 85, 82),
+            blue: Color::Rgb(58, 148, 197),
+            teal: Color::Rgb(53, 167, 124),
+            peach: Color::Rgb(245, 125, 38),
+        }
+    }
+
     /// Vesper — minimal high-contrast monochrome with peach and mint accents.
     pub fn vesper() -> Self {
         Self {
@@ -494,6 +538,8 @@ impl Palette {
             "kanagawa-lotus" | "lotus" => Some(Self::kanagawa_lotus()),
             "rose-pine" | "rosepine" => Some(Self::rose_pine()),
             "rose-pine-dawn" | "rosepine-dawn" | "dawn" => Some(Self::rose_pine_dawn()),
+            "everforest" | "everforest-dark" => Some(Self::everforest()),
+            "everforest-light" => Some(Self::everforest_light()),
             "vesper" => Some(Self::vesper()),
             _ => None,
         }
@@ -775,6 +821,8 @@ pub const THEME_NAMES: &[&str] = &[
     "kanagawa-lotus",
     "rose-pine",
     "rose-pine-dawn",
+    "everforest",
+    "everforest-light",
     "vesper",
 ];
 
